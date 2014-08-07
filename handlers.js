@@ -12,7 +12,6 @@ exports.UvaEvents = function(req, res){
 		res.send(html);
 	})
 }
-/**
 exports.pinterless = function(req, res) {
 	console.log("Query: " + req.query);
 	if (req.query.search) {

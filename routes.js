@@ -3,8 +3,8 @@ module.exports = function(app) {
 	app.get('/', handlers.UvaHome);
 	app.get('/UvaEvents', handlers.UvaEvents);
 
-	//app.get('/pinterless', handlers.pinterless);
+	app.get('/pinterless', handlers.pinterless);
 
 	// Posts
-	//app.post('/pinterless', handlers.createPin);
+	app.post('/pinterless', handlers.createPin);
 }
