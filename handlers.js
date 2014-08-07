@@ -1,8 +1,11 @@
 var mongoose = require('mongoose'),
 Pin = mongoose.model('Pin');
 
-exports.index = function(req, res) {
-	res.send("Welcome to CS 1501");
+exports.UvaHome = function(req, res){
+	res.render('UvaHome', function(err,html){
+		res.send(html);
+	})
+
 }
 
 var watchf = function(req, res) {

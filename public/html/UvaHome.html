@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Uva Club of Korea </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <style type="text/css">
+
+    body {
+    padding: 60px 0px;
+   
+  }
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+}
+
+/* ------------------- Carousel Styling ------------------- */
+
+.carousel-inner {
+  border-radius: 15px;
+
+}
+
+.carousel-caption {
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  padding: 0 0 10px 25px;
+  color: #fff;
+  text-align: left;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 15;
+  margin: 0;
+  padding: 0 25px 25px 0;
+  text-align: right;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-color: #e6e7e8
+}
+
+.section-white {
+   padding: 10px 0;
+
+}
+
+.section-white {
+  background-color: #fff;
+  color: #555;
+}
+
+@media screen and (min-width: 768px) {
+  .section-white {
+     padding: 1.5em 0;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 990px;
+  }
+
+}
+
+    .dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #fff;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}    </style>
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./UvaHome"><strong><font color= "#cc6600">Uva Club of</font><font color ="#333366">  Korea</font></strong></a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <a href="https://www.facebook.com/groups/332679543474987/"><button type="button" class="btn btn-primary navbar-btn">Facebook</button></a>
+                
+            </ul>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#" > Menu </a>
+                </li>
+                 <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">행사 <b class="caret"></b></a>
+                    <ul class="dropdown-menu multi-level">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Officers</a></li>
+                        <li><a href="#">궁금한 점</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li class="divider"></li>
+                        <li><a href="./UvaEvents">이벤트들</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<section class="section-white">
+  <div class="container">
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpf1/t1.0-9/10401923_568535273265811_2209032019926792441_n.jpg" alt="...">
+          <div class="carousel-caption">
+            <h2><a href="./UvaEvents">Uva Club of Korea - 신입생 환영회</a></h2>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://i57.tinypic.com/b5k6ra.jpg" alt="...">
+
+          <div class="carousel-caption">
+            <h2>Heading</h2>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://placehold.it/800x400" alt="...">
+          <div class="carousel-caption">
+            <h2>Heading</h2>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://placehold.it/800x400" alt="...">
+          <div class="carousel-caption">
+            <h2>Heading</h2>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="http://placehold.it/800x400" alt="...">
+          <div class="carousel-caption">
+            <h2>Heading</h2>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="http://placehold.it/800x400" alt="...">
+          <div class="carousel-caption">
+            <h2>Heading</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+      <div class="footer">
+        <p>&copy; Hong Jik Lee 2014</p>
+      </div>
+    </div>
+  </div>
+
+      <!-- /END THE FEATURETTES -->
+
+
+     
+</body>
+</html>
