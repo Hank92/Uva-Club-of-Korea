@@ -1,13 +1,13 @@
-//point: what you need to install by npm & what version of you need to install
-//json: javascript object notation, anything inside {} is an object 
+
 {
 	"name": "Uva_Club_of_Korea",
 	"description": "Uva Korea website",
+	"private": true,
 	"version": "0.0.1",
 	"author": "Hong Jik Lee",
 	"engines": {
-		"node": "0.10.x"// what version of node running and npm
-		"npm": "1.4.x"
+		"node": "0.10.x"
+		"npm": "1.3.x"
 	},
 	"dependencies": {
 		"express": "~3.4.8",
@@ -15,3 +15,5 @@
 		"mongoose": "latest"
 	}
 }
+
+

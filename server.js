@@ -6,7 +6,8 @@ var express = require("express")
 var app = express();
 
 var uristring = process.env.MONGOLAB_URI || 
-'mongodb://heroku_app23118688:356fnin76seeodeth2pvfcp6f7@dbh42.mongolab.com:27427/heroku_app23118688';
+'mongodb://heroku_app28200509:45egdfekhi45stqko0mu64rqr5@ds031477.mongolab.com:31477/heroku_app28200509';
+
 // 'mongodb://localhost/myMongodbDatabase';
 
 
