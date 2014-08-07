@@ -5,22 +5,14 @@ exports.UvaHome = function(req, res){
 	res.render('UvaHome', function(err,html){
 		res.send(html);
 	})
-
 }
 
-var watchf = function(req, res) {
-	var video_id = req.query.v;
-	res.render('watch', { id: video_id }, function(err, html) {
+exports.UvaEvents = function(req, res){
+	res.render('UvaEvents', function(err,html){
 		res.send(html);
 	})
 }
-
-exports.bootstrap = function(req, res) {
-	res.render('bootstrap101', function(err, html) {
-		res.send(html);
-	})
-}
-
+/**
 exports.pinterless = function(req, res) {
 	console.log("Query: " + req.query);
 	if (req.query.search) {
@@ -57,5 +49,3 @@ exports.createPin = function(req, res) {
 	});	
 
 }
-
-exports.watch = watchf;
