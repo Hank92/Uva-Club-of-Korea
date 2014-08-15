@@ -12,6 +12,43 @@ exports.UvaEvents = function(req, res){
 		res.send(html);
 	})
 }
+
+exports.UvaMembers = function(req, res){
+	res.render('UvaMembers', function(err,html){
+		res.send(html);
+	})
+}
+
+exports.UvaExample = function(req, res){
+	res.render('UvaExample', function(err,html){
+		res.send(html);
+	})
+}
+
+exports.UvaEv = function(req, res){
+	res.render('UvaEv', function(err,html){
+		res.send(html);
+	})
+}
+
+exports.About = function(req, res){
+	res.render('About', function(err,html){
+		res.send(html);
+	})
+}
+
+exports.Uvaquestions = function(req, res){
+	res.render('Uvaquestions', function(err,html){
+		res.send(html);
+	})
+}
+
+exports.UvaContact = function(req, res){
+	res.render('UvaContact', function(err,html){
+		res.send(html);
+	})
+}
+
 exports.pinterless = function(req, res) {
 	console.log("Query: " + req.query);
 	if (req.query.search) {
