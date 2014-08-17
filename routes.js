@@ -5,7 +5,7 @@ module.exports = function(app) {
 	app.get('/UvaExample', handlers.UvaExample);
 	app.get('/UvaQuestions', handlers.UvaMembers);
 	app.get('/UvaContact', handlers.UvaContact);
-	app.get('/UvaMembers', handlers.Uvaquestions);
+	app.get('/UvaMembers', handlers.UvaMembers);
 	app.get('/About', handlers.About);
 
 	app.get('/pinterless', handlers.pinterless);
