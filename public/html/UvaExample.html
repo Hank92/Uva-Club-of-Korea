@@ -5,152 +5,133 @@
     <meta charset="utf-8">
     <title>Uva Club of Korea</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <style type="text/css">
-
-body {
-    background-color: #eee;
-}
-    /* Makes images fully responsive */
-
-.img-responsive,
-.thumbnail > img,
-.thumbnail a > img,
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
-  display: block;
-  width: 100%;
-  height: 50%;
+        body {
+  background: url(http://pics4.city-data.com/cpicv/vfiles11436.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 60px 0px;
 }
 
-
-.carousel-inner {
-  border-radius: 15px;
+.panel-default {
+opacity: 0.9;
+margin-top:30px;
 }
+        
+    
+    .navbar-collapse {
+        position: relative;
+        padding-top: 30px !important;
+        max-height: 270px;
+    }
 
-.carousel-caption {
-  background-color: rgba(0,0,0,.5);
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  padding: 0 0 10px 25px;
-  color: #fff;
-  text-align: left;
-}
-
-@media screen and (min-width: 768px) {
-
-  .section-white {
-     padding: 0.5em 0;
-  }
-
-}
-
-    @media screen and (min-width: 992px) {
-
-  .container {
-    max-width: 1230px;
-  }
-
-}
-    </style>
+    @media (min-width: 768px) {
+        .navbar-collapse {
+            padding-top: 0px !important;
+            padding-right: 38px !important;
+        }
+    }    </style>
     <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
-
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    
 </head>
 <body>
-	<div class="container">
-  <div class="row">
-    <div class="span12">
-      <div class="head">
-        <div class="row-fluid">
-            <div class="span12">
-                <div class="span6">
-                    <h1 class="muted" href="./UvaEvents"><a href="./UvaExample"><font color= "#cc6600">Uva Club of</font></a> <a href="./UvaExample"><font color ="#333366">Korea</font></a></h1>
-                </div>
-
-                <div class="span4 offset2" style="margin-top:15px;">
-                    <a href="https://www.facebook.com/groups/332679543474987/"><button type="button" class="btn btn-primary pull-right">Facebook</button></a>
-                </div>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><font color= "#cc6600"><strong>Uva Club of</strong></font> <font color ="#333366"><strong>Korea</strong></font></a>
             </div>
-        </div>
 
-        <div class="navbar">
-            <div class="navbar-inner">
-                <div class="container">
-                    <ul class="nav">
-                        <li>
-                            <a href="./About"><strong>About</strong></a>
-                        </li>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">구성원</a></li>
+                            <li><a href="#">행사</a></li>
+                            <li><a href="#">인턴</a></li>
+                            <li><a href="#">궁금한점</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">만든사람</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul class="nav navbar-nav navbar-right">
+                    <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="username" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="password" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-success">Sign In</button>
+                </form>
+                </ul>
 
-                        <li>
-                            <a href="./UvaMembers"><strong>구성원</strong></a>
-                        </li>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    
+    <div class="container">
+        <div class="row">
 
-                        <li>
-                            <a href="./UvaEvents"><strong>행사</strong></a>
-                        </li>
+            <div class="col-md-4 col-md-offset-7">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-globe"></span> Sign up</div>
+                <div class="panel-body">
+                    <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-3 control-label">
+                            Email</label>
+                        <div class="col-sm-9">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-3 control-label">
+                            Password</label>
+                        <div class="col-sm-9">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password" required>
+                        </div>
+                    </div>
 
-                        <li>
-                            <a href="./UvaQuestions"><strong>궁금한점</strong></a>
-                        </li>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-3 control-label">
+                            Class of </label>
+                        <div class="col-sm-9">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="ex) 2016" required>
+                        </div>
+                    </div>
 
-                        <li>
-                            <a href="./UvaContact"><strong>Contact us</strong></a>
-                        </li>
-
-                    </ul>
+                    <div class="form-group last">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <button type="submit" class="btn btn-success btn-sm">
+                                Sign up!</button>
+                                 <button type="reset" class="btn btn-default btn-sm">
+                                Forgot Id/Password</button>
+                        </div>
+                    </div>
+                    </form>
                 </div>
-            </div>
         </div>
-        <section class="section-white">
-  <div class="container">
-
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-      </ol>
-
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="https://fbcdn-sphotos-f-a.akamaihd.net/hphotos-ak-xpf1/t1.0-9/10003505_10152052704852635_1235879011_n.jpg" alt="...">
-          <div class="carousel-caption">
-            <h2>버지니아 대학교 농구 우승</h2>
-          </div>
-        </div>
-        <div class="item">
-          <img src="https://scontent-b.xx.fbcdn.net/hphotos-xpa1/t1.0-9/971333_10152050699043210_811984718_n.jpg" alt="...">
-          <div class="carousel-caption">
-            <h2>End of the Year Party</h2>
-          </div>
-        </div>
-        <div class="item">
-          <img src="https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xpf1/t1.0-9/10401923_568535273265811_2209032019926792441_n.jpg" alt="...">
-          <div class="carousel-caption">
-            <h2>신입생 환영회</h2>
-          </div>
-        </div>
-      </div>
-
-      <!-- Controls -->
-      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-      </a>
-      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-      </a>
     </div>
-
-  </div>
-      </div>
-    </div>
-  </div>
-</div>	
+    </div>  
 </body>
 </html>
