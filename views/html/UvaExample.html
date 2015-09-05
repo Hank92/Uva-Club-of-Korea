@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Uva Club of Korea</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <style type="text/css">
+        body {
+  background: url(http://pics4.city-data.com/cpicv/vfiles11436.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 60px 0px;
+}
+
+.panel-default {
+opacity: 0.9;
+margin-top:30px;
+}
+        
+    
+    .navbar-collapse {
+        position: relative;
+        padding-top: 30px !important;
+        max-height: 270px;
+    }
+
+    @media (min-width: 768px) {
+        .navbar-collapse {
+            padding-top: 0px !important;
+            padding-right: 38px !important;
+        }
+    }    </style>
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><font color= "#cc6600"><strong>Uva Club of</strong></font> <font color ="#333366"><strong>Korea</strong></font></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">구성원</a></li>
+                            <li><a href="#">행사</a></li>
+                            <li><a href="#">인턴</a></li>
+                            <li><a href="#">궁금한점</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">만든사람</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <ul class="nav navbar-nav navbar-right">
+                    <form class="navbar-form navbar-right" role="form" action="/login" method="post">
+                        
+                    <div class="form-group">
+                        <input type="email" class="form-control "id="exampleInputEmail2" name="email" placeholder="Enter email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" id="exampleInputPassword2" placeholder="Password"required>
+                    </div>
+                    <button type="submit" class="btn btn-success">Sign In</button>
+                </form>
+                </ul>
+
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 col-md-offset-7">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-globe"></span> Sign up</div>
+                <div class="panel-body">
+                     <form class="form-horizontal" role="form" action="/signup" method="post">
+
+                    <div class="form-group">
+                        <label for="user_name" class="col-sm-3 control-label">
+                            Name</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="name" id="user_name" placeholder="이름" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user_email" class="col-sm-3 control-label">
+                            Email</label>
+                        <div class="col-sm-9">
+                            <input type="email" name = "email" id="user_email" class="form-control" placeholder="email@virginia.edu" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="user_password" class="col-sm-3 control-label">
+                            Password</label>
+                        <div class="col-sm-9">
+                            <input type="password" id = "user_password" name = "password"  class="form-control" placeholder="Password:at least 8 characters"  required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user_classof" class="col-sm-3 control-label">
+                            Class of </label>
+                        <div class="col-sm-9">
+                            <input type="text" id = "user_classof" name = "classof"  class="form-control" placeholder="ex) class of 2016"  required>
+                        </div>
+                    </div>
+
+                    <div class="form-group last">
+                        <div class="col-sm-offset-3 col-sm-9">
+                            <button type="submit" class="btn btn-success btn-sm">
+                                Sign up!</button>
+                                 <button type="reset" class="btn btn-default btn-sm">
+                                Forgot Id/Password</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+        </div>
+    </div>
+    </div>  
+</body>
+</html>

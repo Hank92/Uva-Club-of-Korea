@@ -1,35 +1,41 @@
-var express = require("express")
-, path = require('path')
-, mongoose = require('mongoose')
-, models = require('./models');
+var express = require("express");
+var path = require('path');
+var mongoose = require('mongoose');
+var passport = require('passport');
+var flash    = require('connect-flash');
+
 
 var app = express();
 
 var uristring = process.env.MONGOLAB_URI || 
 'mongodb://heroku_app28200509:45egdfekhi45stqko0mu64rqr5@ds031477.mongolab.com:31477/heroku_app28200509';
-
+mongoose.connect(configDB.url); // connect to our database
 // 'mongodb://localhost/myMongodbDatabase';
 
-
-// Points Express to a folder where you keep static files
-// e.g. css or client side js files
-app.use(express.static(path.normalize(__dirname) + '/public'))
+require('./routes')(app, passport);
+require('./config/passport')(passport);
 
 
-// These 3 lines tell express that we are going to be rendering html files
-// held in the public directory which should be in the same directory as this file
-app.set('views', path.normalize(__dirname) + '/public/html');
-app.set('view engine', 'html');
-app.engine('html', require('ejs').renderFile);
 
-// Tell express to use its built in error handler
-app.use(express.logger('dev'));
-app.use(express.errorHandler());
-app.use(express.bodyParser());
-app.use(express.methodOverride());
-app.use(app.router);
+app.configure(function() {
 
-require('./routes')(app);
+	// set up our express application
+	app.use(express.logger('dev')); // log every request to the console
+	app.use(express.cookieParser()); // read cookies (needed for auth)
+	app.use(express.bodyParser()); // get information from html forms
+	app.use(express.methodOverride()); // put & delete
+
+	app.set('view engine', 'ejs'); // set up ejs for templating
+
+	// required for passport
+	app.use(express.session({ secret: 'HankHankhanktheBestHank' })); // session secret
+	app.use(passport.initialize());
+	app.use(passport.session()); // persistent login sessions
+	app.use(flash()); // use connect-flash for flash messages stored in session
+
+});
+
+
 
 mongoose.connect(uristring, function(err, res) {
 	if (err) {
